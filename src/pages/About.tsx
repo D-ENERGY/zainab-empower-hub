@@ -6,7 +6,7 @@ import crest from "@/assets/zbm-crest.jpg";
 const goals = [
   "To provide tuition‑free education for Vulnerable Girl‑Child and Women in Nigeria and beyond.",
   "To provide access to quality education for Vulnerable Girl‑Child and Women in Nigeria and beyond.",
-  "To provide entrepreneurial and skills acquisition education for the financial freedom of the Girl‑Child and Vulnerable Women in Nigeria and beyond.",
+  "To provide entrepreneurial and skills acquisition education for financial freedom of Girl‑Child and Vulnerable Women in Nigeria and beyond.",
   "To promote gender equality in entrepreneurial and skills acquisition education.",
   "To promote National Economic Growth and Development.",
 ];
@@ -75,9 +75,7 @@ const About = () => {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Initiator</p>
           <h2 className="mt-2 font-serif text-4xl">Sagir Isa, PhD</h2>
           <p className="mt-3 max-w-2xl text-primary-foreground/85">
-            Trustee, Grassroots International Research and Development Centre (GIRDC). Sagir Isa, PhD is the
-            initiator of Zainab Bint Muhammad University, Abuja — championing tuition‑free higher and
-            entrepreneurial education for the Vulnerable Girl‑Child and Women in Nigeria and beyond.
+            Sagir Isa, PhD (Trustee, Grassroots International Research and Development Centre)
           </p>
         </div>
       </section>

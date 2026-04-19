@@ -6,11 +6,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import crest from "@/assets/zbm-crest.jpg";
 
 const goals = [
-  "Tuition‑free education for Vulnerable Girl‑Child and Women.",
-  "Access to quality higher education in Nigeria and beyond.",
-  "Entrepreneurial and skills acquisition for financial freedom.",
-  "Promotion of gender equality in skills education.",
-  "Catalysing national economic growth and development.",
+  "To provide tuition‑free education for Vulnerable Girl‑Child and Women in Nigeria and beyond.",
+  "To provide access to quality education for Vulnerable Girl‑Child and Women in Nigeria and beyond.",
+  "To provide entrepreneurial and skills acquisition education for financial freedom of Girl‑Child and Vulnerable Women in Nigeria and beyond.",
+  "To promote gender equality in entrepreneurial and skills acquisition education.",
+  "To promote National Economic Growth and Development.",
 ];
 
 const Index = () => {
@@ -63,9 +63,8 @@ const Index = () => {
         <Card className="border-accent/30 shadow-card">
           <CardContent className="space-y-3 p-6 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Our Vision</p>
-            <h2 className="font-serif text-xl text-primary sm:text-2xl md:text-3xl">A leading university for the Girl‑Child</h2>
             <p className="text-muted-foreground">
-              To be a leading university in the provision of higher and entrepreneurial education for
+              To be a leading University in the provision of Higher and Entrepreneurial Education for
               Vulnerable Girl‑Child and Women in Nigeria and beyond.
             </p>
           </CardContent>
@@ -73,11 +72,10 @@ const Index = () => {
         <Card className="border-primary/15 bg-secondary shadow-card">
           <CardContent className="space-y-3 p-6 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Our Mission</p>
-            <h2 className="font-serif text-xl text-primary sm:text-2xl md:text-3xl">Education that transforms lives</h2>
             <p className="text-muted-foreground">
-              To erect structures and create standards strategically towards enhanced education and
-              entrepreneurial skills that impact positively on Vulnerable Girl‑Child and Women — aligned with
-              best global practices.
+              To erect structures and create standards strategically towards the provision of enhanced
+              education and entrepreneurial skills that would impact positively on Vulnerable Girl‑Child and
+              Women in Nigeria and beyond, in line with best global practices on education.
             </p>
           </CardContent>
         </Card>
@@ -112,7 +110,7 @@ const Index = () => {
           <p className="mt-6 text-xs uppercase tracking-[0.2em] text-accent">Initiator</p>
           <h3 className="mt-2 font-serif text-2xl sm:text-3xl">Sagir Isa, PhD</h3>
           <p className="mt-2 text-sm text-primary-foreground/80">
-            Trustee, Grassroots International Research and Development Centre (GIRDC)
+            Sagir Isa, PhD (Trustee, Grassroots International Research and Development Centre)
           </p>
         </div>
         <div className="space-y-4">
