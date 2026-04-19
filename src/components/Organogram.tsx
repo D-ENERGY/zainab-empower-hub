@@ -79,9 +79,9 @@ const Organogram = () => {
             />
           </div>
 
-          <div className="flex items-center justify-center">
-            <div className="rounded-lg border border-dashed border-primary/30 bg-background/60 px-4 py-6 text-center text-xs text-muted-foreground">
-              Bursary supports both<br />Administration & Academics
+          <div className="order-last flex items-center justify-center md:order-none">
+            <div className="w-full rounded-lg border border-dashed border-primary/30 bg-background/60 px-4 py-4 text-center text-xs text-muted-foreground md:py-6">
+              Bursary supports both<br />Administration &amp; Academics
             </div>
           </div>
 
