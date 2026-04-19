@@ -17,6 +17,9 @@ const OrganogramPage = () => {
 
       <section className="container py-12 sm:py-16">
         <OrganogramChart />
+        <p className="mt-5 text-center text-sm font-medium text-muted-foreground">
+          For full view of the organogram, please use a desktop device.
+        </p>
 
         <div className="mx-auto mt-12 max-w-3xl space-y-3 text-sm text-muted-foreground">
           <h3 className="font-serif text-xl text-primary">Notes on the structure</h3>
