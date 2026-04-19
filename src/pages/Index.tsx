@@ -100,18 +100,18 @@ const Index = () => {
       </section>
 
       {/* Initiator */}
-      <section className="container grid gap-10 py-20 md:grid-cols-[1fr_1.4fr] md:items-center">
-        <div className="rounded-2xl bg-gradient-hero p-10 text-primary-foreground shadow-elegant">
+      <section className="container grid gap-8 py-16 sm:py-20 md:grid-cols-[1fr_1.4fr] md:items-center md:gap-10">
+        <div className="rounded-2xl bg-gradient-hero p-7 text-primary-foreground shadow-elegant sm:p-10">
           <HeartHandshake className="h-10 w-10 text-accent" />
           <p className="mt-6 text-xs uppercase tracking-[0.2em] text-accent">Initiator</p>
-          <h3 className="mt-2 font-serif text-3xl">Sagir Isa, PhD</h3>
+          <h3 className="mt-2 font-serif text-2xl sm:text-3xl">Sagir Isa, PhD</h3>
           <p className="mt-2 text-sm text-primary-foreground/80">
             Trustee, Grassroots International Research and Development Centre (GIRDC)
           </p>
         </div>
         <div className="space-y-4">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Leadership</p>
-          <h2 className="font-serif text-3xl text-primary md:text-4xl">A vision rooted in service</h2>
+          <h2 className="font-serif text-2xl text-primary sm:text-3xl md:text-4xl">A vision rooted in service</h2>
           <p className="text-muted-foreground">
             Initiated under the trusteeship of GIRDC, Zainab Bint Muhammad University is conceived as a
             beacon of opportunity — opening the doors of higher learning and enterprise to those who have
