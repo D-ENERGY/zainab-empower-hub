@@ -32,7 +32,7 @@ const OrganogramPage = () => {
             rel="noopener noreferrer"
             className="font-semibold text-primary underline underline-offset-2"
           >
-            download the Organogram document file
+            download the organogram document file
           </a>
           .
         </div>
