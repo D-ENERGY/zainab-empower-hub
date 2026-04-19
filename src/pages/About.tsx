@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
+import crest from "@/assets/zbm-crest.jpg";
 
 const goals = [
   "To provide tuition‑free education for Vulnerable Girl‑Child and Women in Nigeria and beyond.",
@@ -13,8 +14,14 @@ const goals = [
 const About = () => {
   return (
     <Layout>
-      <section className="bg-gradient-hero py-14 text-primary-foreground sm:py-20">
-        <div className="container max-w-3xl text-center">
+      <section className="relative overflow-hidden bg-gradient-hero py-14 text-primary-foreground sm:py-20">
+        <div className="container relative isolate max-w-3xl text-center">
+          <img
+            src={crest}
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full object-cover opacity-[0.09] blur-[1px] sm:h-72 sm:w-72"
+          />
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">About</p>
           <h1 className="mt-3 font-serif text-3xl sm:text-4xl md:text-5xl">Zainab Bint Muhammad University, Abuja</h1>
           <p className="mt-5 text-primary-foreground/80">
