@@ -53,11 +53,11 @@ const Index = () => {
       </section>
 
       {/* Vision & Mission */}
-      <section className="container grid gap-6 py-20 md:grid-cols-2">
+      <section className="container grid gap-5 py-14 sm:py-20 md:grid-cols-2 md:gap-6">
         <Card className="border-accent/30 shadow-card">
-          <CardContent className="space-y-3 p-8">
+          <CardContent className="space-y-3 p-6 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Our Vision</p>
-            <h2 className="font-serif text-2xl text-primary md:text-3xl">A leading university for the Girl‑Child</h2>
+            <h2 className="font-serif text-xl text-primary sm:text-2xl md:text-3xl">A leading university for the Girl‑Child</h2>
             <p className="text-muted-foreground">
               To be a leading university in the provision of higher and entrepreneurial education for
               Vulnerable Girl‑Child and Women in Nigeria and beyond.
@@ -65,9 +65,9 @@ const Index = () => {
           </CardContent>
         </Card>
         <Card className="border-primary/15 bg-secondary shadow-card">
-          <CardContent className="space-y-3 p-8">
+          <CardContent className="space-y-3 p-6 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Our Mission</p>
-            <h2 className="font-serif text-2xl text-primary md:text-3xl">Education that transforms lives</h2>
+            <h2 className="font-serif text-xl text-primary sm:text-2xl md:text-3xl">Education that transforms lives</h2>
             <p className="text-muted-foreground">
               To erect structures and create standards strategically towards enhanced education and
               entrepreneurial skills that impact positively on Vulnerable Girl‑Child and Women — aligned with
@@ -78,11 +78,11 @@ const Index = () => {
       </section>
 
       {/* Goals */}
-      <section className="bg-secondary/60 py-20">
+      <section className="bg-secondary/60 py-14 sm:py-20">
         <div className="container">
-          <div className="mx-auto mb-12 max-w-2xl text-center">
+          <div className="mx-auto mb-10 max-w-2xl text-center sm:mb-12">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">What we set out to do</p>
-            <h2 className="mt-2 font-serif text-3xl text-primary md:text-4xl">Our Goals</h2>
+            <h2 className="mt-2 font-serif text-2xl text-primary sm:text-3xl md:text-4xl">Our Goals</h2>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {goals.map((g, i) => (
