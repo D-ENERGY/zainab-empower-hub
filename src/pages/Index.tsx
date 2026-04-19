@@ -47,7 +47,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="relative mx-auto flex items-center justify-center">
+          <div className="relative mx-auto hidden items-center justify-center md:flex">
             <div className="absolute inset-0 rounded-full bg-accent/20 blur-3xl" />
             <img
               src={crest}
