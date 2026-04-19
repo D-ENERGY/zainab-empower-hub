@@ -25,7 +25,16 @@ const OrganogramPage = () => {
       <section className="container py-12 sm:py-16">
         <OrganogramChart />
         <div className="mx-auto mt-5 max-w-3xl rounded-lg border border-accent/30 bg-accent/10 px-4 py-3 text-center text-sm font-medium text-foreground">
-          For full view of the organogram, please use a desktop device.
+          For full view of the organogram, please use a desktop device or{" "}
+          <a
+            href={`${import.meta.env.BASE_URL}organogram-document.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-primary underline underline-offset-2"
+          >
+            download the Organogram document file
+          </a>
+          .
         </div>
 
         <div className="mx-auto mt-12 max-w-3xl space-y-3 text-sm text-muted-foreground">

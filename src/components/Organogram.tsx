@@ -10,94 +10,45 @@ type NodeProps = {
 const Node = ({ title, subtitle, tone = "primary", className }: NodeProps) => (
   <div
     className={cn(
-      "relative z-10 rounded-lg border px-4 py-3 text-center shadow-card transition-transform hover:-translate-y-0.5",
+      "relative z-10 rounded-md border px-3 py-2 text-center shadow-card transition-transform hover:-translate-y-0.5",
       tone === "primary" && "border-primary/20 bg-card text-primary",
       tone === "accent" && "border-accent/40 bg-accent-soft text-primary",
       tone === "muted" && "border-border bg-secondary text-foreground",
       className,
     )}
   >
-    <p className="text-sm font-semibold leading-tight md:text-[15px]">{title}</p>
-    {subtitle && <p className="mt-1 text-[11px] font-medium uppercase tracking-wider text-muted-foreground">{subtitle}</p>}
+    <p className="text-xs font-semibold leading-tight md:text-sm">{title}</p>
+    {subtitle ? (
+      <p className="mt-1 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">{subtitle}</p>
+    ) : null}
   </div>
-);
-
-const VLine = ({ className }: { className?: string }) => (
-  <div className={cn("mx-auto h-6 w-px bg-primary/30", className)} />
 );
 
 const Organogram = () => {
   return (
     <div className="rounded-2xl border border-border bg-gradient-to-b from-secondary/50 to-background p-5 md:p-10">
-      <div className="mx-auto max-w-5xl space-y-2">
-        {/* Visitor */}
-        <Node title="VISITOR" subtitle="Funder / Initiator" tone="accent" className="mx-auto max-w-sm" />
-        <VLine />
+      <div className="mx-auto max-w-6xl">
+        <div className="overflow-x-auto rounded-xl border border-border/80 bg-card shadow-card">
+          <div className="relative mx-auto min-h-[760px] min-w-[900px] bg-card p-4">
+              <Node title="VISITOR" subtitle="Funder / Initiator" tone="accent" className="absolute left-[372px] top-[20px] w-[180px]" />
+              <Node title="CHANCELLOR" subtitle="Trustee - GIRDC" className="absolute left-[372px] top-[98px] w-[180px]" />
+              <Node title="COUNCIL" subtitle="(Pro‑Chancellor) (President - GIRDC)" className="absolute left-[360px] top-[178px] w-[204px]" />
+              <Node title="SENATE / VICE‑CHANCELLOR" subtitle="Female Professor" tone="accent" className="absolute left-[330px] top-[262px] w-[264px]" />
 
-        {/* Chancellor */}
-        <Node title="CHANCELLOR" subtitle="Trustee – GIRDC" className="mx-auto max-w-sm" />
-        <VLine />
+              <Node title="DUPUTY VICE‑CHANCELLOR" subtitle="Administration (Female Professor)" className="absolute left-[24px] top-[300px] w-[230px]" />
+              <Node title="REGISTRY" subtitle="(Registrar)" tone="muted" className="absolute left-[50px] top-[408px] w-[180px]" />
+              <Node title="NON‑ACADEMIC DEPARTMENTS" subtitle="(Deputy Registrars and Directors)" tone="muted" className="absolute left-[10px] top-[500px] w-[260px]" />
 
-        {/* Council */}
-        <Node title="COUNCIL" subtitle="Pro‑Chancellor / President – GIRDC" className="mx-auto max-w-md" />
-        <VLine />
+              <Node title="BURSARY" subtitle="(Bursar)" tone="muted" className="absolute left-[390px] top-[390px] w-[144px]" />
 
-        {/* Senate / VC */}
-        <Node title="SENATE / VICE‑CHANCELLOR" subtitle="Female Professor" tone="accent" className="mx-auto max-w-md" />
-        <VLine />
+              <Node title="DEPUTY VICE‑CHANCELLOR" subtitle="Academics (Female Professor)" className="absolute left-[646px] top-[300px] w-[230px]" />
+              <Node title="LIBRARY" subtitle="Chief Librarian" tone="muted" className="absolute left-[672px] top-[408px] w-[180px]" />
+              <Node title="FACULTIES" subtitle="(Deans / Provosts / Directors)" tone="muted" className="absolute left-[632px] top-[500px] w-[260px]" />
+              <Node title="ACADEMIC DEPARTMENTS" tone="muted" className="absolute left-[694px] top-[590px] w-[136px]" />
 
-        {/* Branching: DVC Admin | Bursary | DVC Academics */}
-        <div className="relative">
-          {/* horizontal connector line */}
-          <div className="absolute left-[16.66%] right-[16.66%] top-0 hidden h-px bg-primary/30 md:block" />
-          <div className="grid gap-4 pt-0 md:grid-cols-3 md:gap-6 md:pt-6">
-            <div className="space-y-2">
-              <VLine className="hidden md:block" />
-              <Node title="DVC – ADMINISTRATION" subtitle="Female Professor" />
-            </div>
-            <div className="space-y-2">
-              <VLine className="hidden md:block" />
-              <Node title="BURSARY" subtitle="Bursar" tone="muted" />
-            </div>
-            <div className="space-y-2">
-              <VLine className="hidden md:block" />
-              <Node title="DVC – ACADEMICS" subtitle="Female Professor" />
-            </div>
+              <Node title="STUDENT BODY" tone="accent" className="absolute left-[638px] top-[680px] w-[250px]" />
           </div>
         </div>
-
-        {/* Second tier under DVCs */}
-        <div className="grid gap-4 pt-4 md:grid-cols-3 md:gap-6">
-          <div className="space-y-2">
-            <VLine />
-            <Node title="REGISTRY" subtitle="Registrar" tone="muted" />
-            <VLine />
-            <Node
-              title="Non‑Academic Departments"
-              subtitle="Deputy Registrars / Directors"
-              tone="muted"
-            />
-          </div>
-
-          <div className="order-last flex items-center justify-center md:order-none">
-            <div className="w-full rounded-lg border border-dashed border-primary/30 bg-background/60 px-4 py-4 text-center text-xs text-muted-foreground md:py-6">
-              Bursary supports both<br />Administration &amp; Academics
-            </div>
-          </div>
-
-          <div className="space-y-2">
-            <VLine />
-            <Node title="LIBRARY" subtitle="Chief Librarian" tone="muted" />
-            <VLine />
-            <Node title="FACULTIES" subtitle="Deans / Provosts / Directors" tone="muted" />
-            <VLine />
-            <Node title="ACADEMIC DEPARTMENTS" subtitle="Heads of Department" tone="muted" />
-          </div>
-        </div>
-
-        {/* Student body */}
-        <VLine />
-        <Node title="STUDENT BODY" subtitle="Vulnerable Girl‑Child & Women" tone="accent" className="mx-auto max-w-md" />
       </div>
 
       <p className="mt-8 text-center text-xs uppercase tracking-[0.2em] text-muted-foreground">
