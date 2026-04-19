@@ -46,7 +46,7 @@ const Index = () => {
             <img
               src={crest}
               alt="Official crest of Zainab Bint Muhammad University, Abuja"
-              className="relative h-64 w-64 rounded-full object-cover shadow-elegant ring-4 ring-accent/60 md:h-80 md:w-80"
+              className="relative h-44 w-44 rounded-full object-cover shadow-elegant ring-4 ring-accent/60 sm:h-64 sm:w-64 md:h-80 md:w-80"
             />
           </div>
         </div>
