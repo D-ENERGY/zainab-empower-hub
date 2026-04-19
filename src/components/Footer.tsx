@@ -38,7 +38,7 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-primary-foreground/15">
-        <div className="container flex flex-col items-center justify-between gap-2 py-5 text-xs text-primary-foreground/60 md:flex-row">
+        <div className="container flex flex-col items-center justify-center gap-2 py-5 text-center text-xs text-primary-foreground/60">
           <p>© {new Date().getFullYear()} Zainab Bint Muhammad University, Abuja. All rights reserved.</p>
           <p>An initiative of GIRDC.</p>
         </div>
