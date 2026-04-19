@@ -19,12 +19,12 @@ const Index = () => {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
         <div className="pointer-events-none absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_20%_20%,hsl(var(--accent))_0,transparent_40%),radial-gradient(circle_at_80%_60%,hsl(var(--primary-glow))_0,transparent_45%)]" />
-        <div className="container relative grid gap-12 py-20 md:grid-cols-[1.2fr_1fr] md:py-28">
-          <div className="animate-fade-in-up space-y-6">
-            <span className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-primary-foreground/5 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-accent">
+        <div className="container relative grid gap-10 py-14 sm:py-20 md:grid-cols-[1.2fr_1fr] md:py-28">
+          <div className="animate-fade-in-up space-y-5 sm:space-y-6">
+            <span className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-primary-foreground/5 px-3 py-1.5 text-[11px] uppercase tracking-[0.18em] text-accent sm:px-4 sm:text-xs">
               <Sparkles className="h-3.5 w-3.5" /> A new university for Nigeria
             </span>
-            <h1 className="font-serif text-4xl font-bold leading-[1.05] md:text-6xl">
+            <h1 className="font-serif text-[2rem] font-bold leading-[1.08] sm:text-4xl md:text-6xl">
               Zainab Bint Muhammad University, <span className="text-accent">Abuja</span>
             </h1>
             <p className="max-w-xl text-base text-primary-foreground/80 md:text-lg">
