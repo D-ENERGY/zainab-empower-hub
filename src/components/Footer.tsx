@@ -14,8 +14,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="max-w-sm text-sm text-primary-foreground/75">
-            A proposed university dedicated to tuition‑free higher and entrepreneurial education for the
-            Vulnerable Girl‑Child and Women in Nigeria and beyond.
+          A Tuition Free University dedicated for the upliftment of Girl - Child and Vulnerable Women in Nigeria and Beyond through Entrepreneurial Education.
           </p>
         </div>
 
