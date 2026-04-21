@@ -40,11 +40,13 @@ const OrganogramPage = () => {
         <div className="mx-auto mt-12 max-w-3xl space-y-3 text-sm text-muted-foreground">
           <h3 className="font-serif text-xl text-primary">Notes on the structure</h3>
           <ul className="list-disc space-y-2 pl-5">
-            <li>The <strong className="text-foreground">Visitor</strong> serves as the Funder/Initiator of the University.</li>
+          <li>The <strong className="text-foreground">Visitor</strong> serves as the Funder/Initiator of the University.</li>
             <li>The <strong className="text-foreground">Chancellor</strong> is a Trustee of GIRDC.</li>
             <li>The <strong className="text-foreground">Council</strong> is led by the Pro‑Chancellor / President of GIRDC.</li>
             <li>The <strong className="text-foreground">Vice‑Chancellor</strong> and Deputy Vice‑Chancellors are Female Professors, in keeping with the University's mission.</li>
-            <li>The <strong className="text-foreground">Bursary</strong> serves both the Administrative and Academic arms of the University.</li>
+            <li>The <strong className="text-foreground">Bursary</strong> Is the Custodian of finances of the University.</li>
+            <li>The <strong className="text-foreground">Chief Librarian</strong> - Is the Custodian of all libraries of the University.</li>
+            <li>The <strong className="text-foreground">Registrar</strong> - Is the head of Non - Academic Staff of the University.</li>
           </ul>
         </div>
       </section>
