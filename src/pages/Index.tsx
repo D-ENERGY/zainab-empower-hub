@@ -34,8 +34,7 @@ const Index = () => {
               Zainab Bint Muhammad University, <span className="text-accent">Abuja</span>
             </h1>
             <p className="max-w-xl text-base text-primary-foreground/80 md:text-lg">
-              A proposed tuition‑free institution providing higher and entrepreneurial education for the
-              Vulnerable Girl‑Child and Women in Nigeria and beyond — in line with best global practices.
+            A Tuition Free University dedicated for the upliftment of Girl - Child and Vulnerable Women in Nigeria and Beyond through Entrepreneurial Education.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
