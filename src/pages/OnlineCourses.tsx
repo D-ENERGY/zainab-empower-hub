@@ -65,29 +65,57 @@ const OnlineCourses = () => {
         </div>
       </section>
 
-      <section className="container py-10 sm:py-16">
-        <Card className="mx-auto max-w-4xl border-accent/30 shadow-card">
+      <section className="container overflow-x-hidden py-10 sm:py-16">
+        <Card className="mx-auto max-w-4xl overflow-hidden border-accent/30 shadow-card">
           <CardHeader className="px-4 pb-4 pt-5 sm:px-6 sm:pt-6">
             <CardTitle className="font-serif text-xl text-primary sm:text-2xl">Available Certificate Courses</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4 px-4 pb-5 sm:space-y-6 sm:px-6 sm:pb-6">
-            <Select value={selectedCourseId} onValueChange={setSelectedCourseId}>
-              <SelectTrigger className="h-12 w-full text-left">
-                <SelectValue placeholder="Select a course" />
-              </SelectTrigger>
-              <SelectContent>
+            <div className="sm:hidden">
+              <p className="mb-2 text-sm text-muted-foreground">Select a course</p>
+              <div className="max-h-72 space-y-2 overflow-y-auto rounded-md border border-input bg-background p-2">
                 {courses.map((course) => (
-                  <SelectItem key={course.id} value={course.id}>
+                  <button
+                    key={course.id}
+                    type="button"
+                    onClick={() => setSelectedCourseId(course.id)}
+                    className={`w-full whitespace-normal break-words rounded-md border px-3 py-2 text-left text-sm leading-snug transition-colors ${
+                      selectedCourseId === course.id
+                        ? "border-primary bg-secondary text-primary"
+                        : "border-border bg-background text-foreground hover:bg-secondary/70"
+                    }`}
+                  >
                     {course.title}
-                  </SelectItem>
+                  </button>
                 ))}
-              </SelectContent>
-            </Select>
+              </div>
+            </div>
+
+            <div className="hidden sm:block">
+              <Select value={selectedCourseId} onValueChange={setSelectedCourseId}>
+                <SelectTrigger className="h-12 w-full text-left">
+                  <SelectValue placeholder="Select a course" />
+                </SelectTrigger>
+                <SelectContent className="max-h-72 w-[var(--radix-select-trigger-width)]">
+                  {courses.map((course) => (
+                    <SelectItem
+                      key={course.id}
+                      value={course.id}
+                      className="h-auto items-start whitespace-normal py-2.5 leading-snug"
+                    >
+                      {course.title}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
 
             {selectedCourse && (
               <div className="rounded-lg border border-border bg-secondary/40 p-4 sm:p-5">
                 <p className="text-sm text-muted-foreground">Selected course</p>
-                <h2 className="mt-1 text-base font-semibold text-primary sm:text-lg">{selectedCourse.title}</h2>
+                <h2 className="mt-1 break-words text-base font-semibold text-primary sm:text-lg">
+                  {selectedCourse.title}
+                </h2>
 
                 {selectedCourse.status === "open" ? (
                   <div className="mt-4 space-y-3">
